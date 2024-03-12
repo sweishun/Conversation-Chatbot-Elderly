@@ -38,7 +38,6 @@ if audio_bytes:
             st.write(transcript)
     
     with st.chat_message("assistant"):
-
         generate_speech(final_response)
         st.write(final_response)
         st.session_state.messages.append({"role": "assistant", "content": final_response})
