@@ -33,7 +33,7 @@ prompt_template = PromptTemplate(
     AI: 
     """
 )
-memory = ConversationBufferWindowMemory(k=0)
+memory = ConversationBufferWindowMemory(k=1)
 
 conv_chain = ConversationChain(llm=llm,
                  prompt=prompt_template,
