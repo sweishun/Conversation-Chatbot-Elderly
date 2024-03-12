@@ -21,19 +21,8 @@ def generate_speech(response_msg):
         tts.save(audio_file_path)
         print("Audio file saved.")
 
-        # Assuming this function plays the audio file
         autoplay_audio(audio_file_path)
         print("Playback initiated.")
         
     except Exception as e:
         print(f"Error during audio generation or playback: {e}")
-
-
-
-
-# API_URL = "https://api-inference.huggingface.co/models/microsoft/speecht5_tts"
-# headers = {"Authorization": f"Bearer {os.getenv('HUGGINGFACE_TOKEN')}"}
-
-# def query(payload):
-# 	response = requests.post(API_URL, headers=headers, json=payload)
-# 	return response.content
